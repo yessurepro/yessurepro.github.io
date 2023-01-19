@@ -530,9 +530,9 @@ section {
 
 /* support */
 .support {
-  background: #E9E8E7;
-  background-image: url(static/texture.png);
-  background-blend-mode: color-burn;
+  background: #E9E7E4;
+  background-image: url(static/bg-main.jpg);
+  background-blend-mode: luminosity, normal;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -586,9 +586,9 @@ section {
 
 /* platform */
 .platform {
-  background: #E9E8E7;
-  background-image: url(static/texture.png);
-  background-blend-mode: color-burn;
+  background: #E9E7E4;
+  background-image: url(static/bg-main.jpg);
+  background-blend-mode: luminosity, normal;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -616,6 +616,7 @@ section {
 }
 .platform-txt a {
   text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 .plaform-content-right a{
@@ -634,18 +635,26 @@ section {
 }
 
 /* exhibition */
-.exhibition {
-  background: #E9E8E7;
-  background-image: url(static/texture.png);
-  background-blend-mode: color-burn;
+
+.ex-bg-layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(static/bg-main.jpg) #E9E7E4;
+  background-blend-mode: luminosity, normal;
+  mix-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+.exhibition {
+  background-color: #E9E8E7;
 }
 .exhibition-wrp {
   display: flex;
   gap:150px;
   max-width: 1130px;
+  position: relative;
 }
 .ex-left {
   display: flex;
@@ -657,16 +666,21 @@ section {
   line-height: 130%;
   text-transform: uppercase;
   font-family: Almaz-Light;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
-.free-enter svg {
-  margin-right: 30px;
-}
+
 .ex-info {
   text-transform: uppercase;
-  margin-top: auto;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  font-size: 18px;
+  line-height: 220%;
+  font-family: Almaz-Medium;
+}
+.ex-info a {
+  text-decoration: underline;
 }
 .ex-poster {
   max-width: 440px;
@@ -761,9 +775,9 @@ section {
 
 /* partners-section */
 .partners-section {
-  background: #E9E8E7;
-  background-image: url(static/texture.png);
-  background-blend-mode: color-burn;
+  background: #E9E7E4;
+  background-image: url(static/bg-main.jpg);
+  background-blend-mode: luminosity, normal;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -781,6 +795,12 @@ section {
 }
 .exex-partners {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.exex-partners img {
+  max-height: 75px;
+  filter: saturate(0);
 }
 
 
