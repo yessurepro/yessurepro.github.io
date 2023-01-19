@@ -318,6 +318,7 @@ section {
   font-size: 15px;
   display: flex;
   z-index: 5;
+  cursor: pointer;
 }
 .read-towel svg {
   margin-left: 12px;
@@ -423,9 +424,9 @@ section {
 }
 /* about */
 .about {
-  background: #E9E8E7;
-  background-image: url(static/texture.png);
-  background-blend-mode: color-burn;
+  background: #E9E7E4;
+  background-image: url(static/bg-main.jpg);
+  background-blend-mode: luminosity, normal;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -453,16 +454,33 @@ section {
 
 
 /* see towel */
-.see-towel {
-  background: #E9E8E7;
-  background-image: url(static/texture.png);
-  background-blend-mode: color-burn;
+
+.towel-bg-layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(static/bg-main.jpg) #E9E7E4;
+  background-blend-mode: luminosity, normal;
+  mix-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-
-
+.r1 {
+  background-color: #E4DCD9;
+}
+.r2 {
+  background-color: #C2C4CF;
+}
+.r3 {
+  background-color: #D5CBC4;
+}
+.r4 {
+  background-color: #BCB6B9;
+}
+.r5 {
+  background-color: #BAC4BF;
+}
 
 .open-towel-btn {
   position: absolute;

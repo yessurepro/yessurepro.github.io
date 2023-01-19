@@ -183,7 +183,7 @@
     <div class="wrapper">
         <section id="1" data-section-name="home" class="section home-intro">
             <video class="bg-video" autoplay muted loop 
-            src="https://videos-cdn.readymag.com/5cfe1ca664162178d8215788/6393113422734a36c4f2edb3/e352ce82-2864-4dbb-9fda-e1053ccd6ff7.mp4"></video>
+            src="static/bolem_bg.mp4"></video>
             <div class="hero-wrp">
                 <h1>вишиті болем</h1>
                 <h2>Історії, про які мовчать, вишиті на рушниках</h2>
@@ -197,7 +197,7 @@
                 </div>
                 <div>Дивитись відео</div>
             </div>
-            <a href="#" class="parent-site">
+            <a href="https://www.mh4u.in.ua/dali-ye/" class="parent-site">
                 на сайт далі є
                 <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="5.33333" height="5.33333" fill="white"/>
@@ -221,9 +221,6 @@
         </section>
         
         <section id="2" data-section-name="about" class="section about">
-            <img class="smoke" src="static/smoke-1920.png" alt="" srcset="">
-            <div class="smoke-under"></div>
-            <!-- <img class="smoke-under" src="static/smoke-1920.png" alt="" srcset=""> -->
             <div class="about-wrp">
                 
                 <div class="orange-dots">
@@ -234,9 +231,9 @@
                         </svg>                        
                 </div>
                 <div class="about-txt">
-                    <p>Коли нашому народу боліло, він виспівував біль у пісні й гоїв рану вишиваним рушником. Це – ритуал замовляння, проговорений художньою мовою орнаменту, де кожен символ має сенс. Рушники супроводжують нас протягом усього життя. Це – частина нашого єства, частина нашої історії, де колись буде й ця війна.</p>
+                    <p>Коли нашому народові боліло, він виспівував біль у пісні й гоїв рани вишиваним рушником. Рушники – це замовляння, висловлене художньою мовою орнаменту, де кожен символ має сенс. Вони є частиною нашого коду, частиною народної пам’яті, де колись буде й ця війна.</p>
                     <br>
-                    <p>Ми вишили рушники, щоби переповісти історії про сексуальне насильство на війні, скоєне проти людей, яких не існує. Але вони зібрані з подій, які відбулися насправді. І з подій, які ще обов’язково відбудуться. А відбудеться от що: рани загояться, світло повернеться, ми все переживемо. Далі є.</p>
+                    <p>Ми вишили рушники, щоби переповісти історії про сексуальне насильство, скоєне російськими окупантами над людьми, яких не існує в реальності. Але зібрано ці історії з подій, які відбулися насправді. І з тих, які, віримо, ще обов’язково відбудуться. А відбудеться от що: рани загояться, світло повернеться, ми все переживемо. Далі є.</p>
                 </div>
                 <div class="partners">
                     <img src="static/partners/partn-1.svg" alt="">
@@ -245,26 +242,27 @@
                     <img src="static/partners/partn-4.svg" alt="">
                 </div>
             </div>
-            <a href="#3" class="read-towel">
+            <div onclick="scrMoveTo('#towel1')" class="read-towel">
                 Читати рушники
                 <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="5.33333" height="5.33333" fill="#111111"/>
                     <rect x="5.33398" y="5.3335" width="5.33333" height="5.33333" fill="#111111"/>
                     <rect y="10.6665" width="5.33333" height="5.33333" fill="#111111"/>
                 </svg>
-            </a>
+            </div>
 
         </section>
 
 
-        <section id="3" data-section-name="towel1" class="section see-towel">
+        <section id="3" data-section-name="towel1" class="section r1">
+            <div class="towel-bg-layer"></div>
             <img class="towel-image" src="static/rushnyk-1.png" alt="" srcset="">
             <div class="towel-info">
                 <div class="towel-head">Місто життя й місце сили</div>
-                <div class="towel-subhead">Історія жінки, що не змогла залишити домівку</div>
+                <div class="towel-subhead">Історія жінки, яка не змогла залишити домівку</div>
             </div>
             
-            <a href="city-of-life.html" class="open-towel-btn">
+            <a href="rushnyk-1/" class="open-towel-btn">
                 <div class="open-towel-btn-circle"><svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.333984" y="0.00146484" width="6.66667" height="6.66667" fill="white"/>
                     <rect x="7.00195" y="6.66797" width="6.66667" height="6.66667" fill="white"/>
@@ -275,7 +273,8 @@
 
 
         </section>
-        <section id="4" data-section-name="towel2" class="section see-towel">
+        <section id="4" data-section-name="towel2" class="section r2">
+            <div class="towel-bg-layer"></div>
             <img class="towel-image" src="static/rushnyk-2.png" alt="" srcset="">
             <div class="towel-info">
                 <div class="towel-head">Пошук</div>
@@ -293,7 +292,8 @@
 
 
         </section>
-        <section id="5" data-section-name="towel3" class="section see-towel">
+        <section id="5" data-section-name="towel3" class="section r3">
+            <div class="towel-bg-layer"></div>
             <img class="towel-image" src="static/rushnyk-3.png" alt="" srcset="">
             <div class="towel-info">
                 <div class="towel-head">Життя триває</div>
@@ -311,11 +311,12 @@
 
 
         </section>
-        <section id="6" data-section-name="towel4" class="section see-towel">
+        <section id="6" data-section-name="towel4" class="section r4">
+            <div class="towel-bg-layer"></div>
             <img class="towel-image" src="static/rushnyk-4.png" alt="" srcset="">
             <div class="towel-info">
                 <div class="towel-head">Шлях до безпеки</div>
-                <div class="towel-subhead">Історія жінки, яка не може повернутися</div>
+                <div class="towel-subhead">Історія жінки, яка двічі пережила окупацію</div>
             </div>
             
             <a href="" class="open-towel-btn">
@@ -329,7 +330,8 @@
 
 
         </section>
-        <section id="7" data-section-name="towel5" class="section see-towel">
+        <section id="7" data-section-name="towel5" class="section r5">
+            <div class="towel-bg-layer"></div>
             <img class="towel-image" src="static/rushnyk-5.png" alt="" srcset="">
             <div class="towel-info">
                 <div class="towel-head">Забути минуле в майбутньому</div>
