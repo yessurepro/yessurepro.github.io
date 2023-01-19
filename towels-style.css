@@ -4,12 +4,6 @@
     width: 100%;
     position: relative;
     display: flex;
-    background: #E9E8E7;
-    background-image: url(static/texture.png);
-    background-blend-mode: color-burn;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 .towel-ornament {
     height: 100%;
@@ -81,7 +75,7 @@
     position: fixed;
     height: 100%;
     width: 50%;
-    background-image: url(static/ornament1.jpg);
+    background-image: url(static/1-rush.jpg);
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-position-x: center;
@@ -188,13 +182,11 @@
 }
 .tooltip{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 }
 .derevo-zhyttia {
-    top: 50%;
-    left: 50%;
+    top: 30.5%;
+    left: 50.7%;
     transform: translate(-50%, -50%);
 }
 .pulse{
@@ -255,6 +247,20 @@
     line-height: 130%;
     color: #272727;
 }
+.symbol-txt strong {
+    margin-bottom: 10px;
+    display: block;
+}
+.after-orn-wrp {
+    background: #E9E7E4;
+    background-image: url(static/bg-main.jpg);
+    background-blend-mode: luminosity, normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
 .after-orn {
     height: 100vh;
     display: flex;
@@ -262,7 +268,7 @@
     justify-content: center;
     align-items: center;
     max-width: 670px;
-    margin: 0 auto 40px;
+    margin: 0 auto;
 }
 .after-orn .after-story-social {
     width: 100%;

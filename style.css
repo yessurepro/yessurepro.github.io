@@ -137,7 +137,9 @@ body {
   font-family: Almaz-Regular;
   color: #111111;
 }
-
+strong {
+  font-family: Almaz-Medium;
+}
 
 
 
