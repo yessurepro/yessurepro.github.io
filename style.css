@@ -417,6 +417,7 @@ section {
 }
 .full-video {
   width: 90%;
+  height: 90%;
 }
 .close {
   position: absolute;
@@ -528,6 +529,20 @@ section {
 .towel-image {
   height: 100vh;
   width: 44%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.r3 .towel-image {
+  height: 100vh;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.r4 .towel-image {
+  height: 100vh;
+  width: 54%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -790,11 +805,12 @@ section {
 }
 .partners-wrp {
   max-width: 896px;
-}
-.partners-txt {
-  margin: 40px 0 70px;
   font-size: 20px;
   line-height: 140%;
+}
+.partners-txt {
+  margin: 40px 0;
+
 }
 .exec-partners-wrp {
   margin: 50px 0 0;
@@ -836,62 +852,3 @@ section {
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.smoke-under {
-  position: absolute;
-  height: 200vh;
-  width: 200vw;
-  opacity: 0.9;
-  animation: smokemove 11s ease-in-out infinite;
-  background-image: url(static/smoke-1920.png);
-  background-position: center;
-  background-size: 67%;
-}
-.smoke {
-  position: absolute;
-  height: 70vh;
-  opacity: 0.9;
-  /* animation: smokemove 11s ease-in-out infinite, smoke 5s ease-in-out in; */
-  animation: smokemove 11s ease-in-out infinite;
-  transition: all 2s;
-  z-index: 2;
-  
-}
-.smoke:hover {
-  transition: all 4s;
-  /* height: 100%; */
-  opacity: 0.2;
-}
-
-@keyframes smoke {
-	0% { opacity: 0.7; animation-timing-function: ease-in-out}
-	17%{ opacity: 0.1; animation-timing-function: ease-in-out}
-	27% { opacity: 0.3; animation-timing-function: ease-in-out}
-	61%{ opacity: 0.3; animation-timing-function: ease-in-out}
-	83% { opacity: 0.1; animation-timing-function: ease-in-out}
-	100% { opacity: 0.3; }
-}
-
-@keyframes smokemove {
-	0% {transform: matrix(1,0,0,1,0,0); animation-timing-function: ease-in-out}
-	17% {transform: matrix(1.02,0,0,1.02,0,0);  animation-timing-function: ease-in-out}
-	27% {transform: matrix(1.02,0,0,1.02,0,0);  animation-timing-function: ease-in-out}
-	61% {transform: matrix(0.97,0,0,0.97,-9,-5);  animation-timing-function: ease-in-out}
-	83% {transform: matrix(0.98,0,0,0.98,-2,-23);  animation-timing-function: ease-in-out}
-	100% {transform: matrix(1,0,0,1,0,0);  }
-}
