@@ -184,8 +184,33 @@
     position: absolute;
 
 }
-.derevo-zhyttia {
+.orn1 .t1 {
+    top: 19%;
+    left: 50.7%;
+    transform: translate(-50%, -50%);
+}
+.orn1 .t2 {
     top: 30.5%;
+    left: 50.7%;
+    transform: translate(-50%, -50%);
+}
+.orn1 .t3 {
+    top: 48%;
+    left: 50.4%;
+    transform: translate(-50%, -50%);
+}
+.orn1 .t4 {
+    top: 54.5%;
+    left: 34.7%;
+    transform: translate(-50%, -50%);
+}
+.orn1 .t5 {
+    top: 67.5%;
+    left: 34.7%;
+    transform: translate(-50%, -50%);
+}
+.orn1 .t6 {
+    top: 74.5%;
     left: 50.7%;
     transform: translate(-50%, -50%);
 }
