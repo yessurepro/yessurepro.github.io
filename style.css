@@ -527,6 +527,10 @@ section {
 }
 .towel-image {
   height: 100vh;
+  width: 44%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 
