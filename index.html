@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.2/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <title>Вишиті болем</title>
@@ -860,27 +859,7 @@
             $.scrollify.move(i);
         }
     </script>
-    <script>
-        // define a function that sets min-height of my-element to window.innerHeight:
 
-const setHeight = () => {
-    document.getElementById("1").style.minHeight = window.innerHeight + "px"
-};
-
-// define mobile screen size:
-
-let deviceWidth = window.matchMedia("(max-width: 1024px)");
-
-if (deviceWidth.matches) {
-// set an event listener that detects when innerHeight changes:
-
-    window.addEventListener("resize", setHeight);
-
-// call the function once to set initial height:
-
-    setHeight();
-}
-    </script>
 
     <!-- menu scripts -->
     <script>

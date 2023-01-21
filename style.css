@@ -915,7 +915,9 @@ section {
   }
   section {
     padding: 0 20px;
-    overflow:visible;
+  }
+  .home-intro {
+    height: 100svh;
   }
   .home-intro h1{
     font-size: 12px;
