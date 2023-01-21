@@ -140,8 +140,32 @@ body {
 strong {
   font-family: Almaz-Medium;
 }
-
-
+/* like btn */
+.heart-like {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: Almaz-Medium;
+  font-size: 64px;
+  line-height: 130%;
+  color: #D95E46;
+  cursor: pointer;
+}
+.heart-like:hover svg rect {
+  fill: #D95E46;
+}
+.heart-like.clicked svg rect {
+  fill: #D95E46;
+}
+.heart-like.clicked svg {
+  animation: beat .6s ease-in-out;
+	transform-origin: center;
+}
+@keyframes beat{
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
 
 /* header */
 
@@ -468,6 +492,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  top: 0;
+  left: 0;
 }
 .r1 {
   background-color: #E4DCD9;
@@ -532,6 +558,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  position: relative;
 }
 .r3 .towel-image {
   height: 100vh;
@@ -851,4 +878,5 @@ section {
   height: 100%;
 }
 }
+
 

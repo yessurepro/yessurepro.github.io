@@ -13,6 +13,7 @@
     height: 100vh;
     margin-left: auto;
     display: block;
+    position: relative;
 }
 .towel-btns {
     width: 60%;
@@ -58,7 +59,6 @@
     position: relative;
     display: flex;
     background: #E9E8E7;
-    background-image: url(static/texture.png);
     background-blend-mode: color-burn;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +75,6 @@
     position: fixed;
     height: 100%;
     width: 50%;
-    background-image: url(static/1-rush.jpg);
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-position-x: center;
@@ -92,7 +91,13 @@
     line-height: 126%;
     font-family: Almaz-Light;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+}
+.towel-story h2 {
+    color: #555555;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 60px;
 }
 .towel-story p {
     margin-bottom: 1rem;
@@ -100,28 +105,19 @@
     line-height: 140%;
     color: #2F2E2D;
 }
-.towel-story .likebtn-wrapper {
-    margin:  100px auto 0;
-    display: block;
-
-}
-.towel-story .likebtn-button {
+.towel-story .CountLike {
     display: flex;
+    justify-content: center;
+    margin: 70px 0 0;
+}
+.towel-story .CountLike .heart-like {
     flex-direction: column;
-    align-items: center;
-    height: 100%!important;
-}
-.towel-story .lb-a {
-    padding-left: 10px;
-}
-.towel-story .lb-count {
-    padding: 0 ;
 }
 .after-story-social {
     margin-bottom: 55px;
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 .towel-story .to-read-ornament {
     position: relative;
@@ -184,6 +180,9 @@
     position: absolute;
 
 }
+
+
+/* ornament 1 */
 .orn1 .t1 {
     top: 19%;
     left: 50.7%;
@@ -212,6 +211,142 @@
 .orn1 .t6 {
     top: 74.5%;
     left: 50.7%;
+    transform: translate(-50%, -50%);
+}
+/* ornament 2 */
+
+.orn2 .t1 {
+    top: 29%;
+    left: 46.5%;
+    transform: translate(-50%, -50%);
+}
+.orn2 .t2 {
+    top: 53%;
+    left: 24.5%;
+    transform: translate(-50%, -50%);
+}
+.orn2 .t3 {
+    top: 72%;
+    left: 46.5%;
+    transform: translate(-50%, -50%);
+}
+.orn2 .t4 {
+    top: 90%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+}
+
+/* ornament 3 */
+.orn3 .t1 {
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn3 .t2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn3 .t3 {
+    top: 45%;
+    left: 36.5%;
+    transform: translate(-50%, -50%);
+}
+.orn3 .t4 {
+    top: 57%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+}
+.orn3 .t5 {
+    top: 73%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+}
+.orn3 .t6 {
+    top: 79%;
+    left: 32.5%;
+    transform: translate(-50%, -50%);
+}
+.orn3 .t7 {
+    top: 79%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+}
+/* ornament 4 */
+.orn4 .t1 {
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn4 .t2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn4 .t3 {
+    top: 64%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+}
+.orn4 .t4 {
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn4 .t5 {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn4 .t6 {
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ornament 5 */
+.orn5 .t1 {
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn5 .t2 {
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn5 .t3 {
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+.orn5 .t4 {
+    top: 61%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+.orn5 .t5 {
+    top: 60%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+}
+.orn5 .t6 {
+    top: 69%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+.orn5 .t7 {
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn5 .t8 {
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orn5 .t9 {
+    top: 90%;
+    left: 38%;
     transform: translate(-50%, -50%);
 }
 .pulse{
@@ -244,6 +379,7 @@
     height: 100%;
     top: 0;
     display: none;
+    z-index: 2;
 }
 .symbol.open {
     display: block;
@@ -309,9 +445,12 @@
 .after-orn .story-nav {
     width: 100%;
 }
-.after-orn .likebtn-button {
+
+.after-orn  .CountLike {
     display: flex;
+    justify-content: center;
+    margin: 70px 0 0;
+}
+.after-orn  .CountLike .heart-like {
     flex-direction: column;
-    align-items: center;
-    height: 100%!important;
 }
