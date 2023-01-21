@@ -127,8 +127,8 @@
 
     <nav id="nav">
         <ul class="nav-list">
-            <li><a href="#1" onclick="toggleMenu()">Головна</a></li>
-            <li><a href="#2" onclick="toggleMenu()">проєкт</a></li>
+            <li><a onclick="toggleMenu(),scrMoveTo('#home')">Головна</a></li>
+            <li><a onclick="toggleMenu(),scrMoveTo('#about')">проєкт</a></li>
             <li id="more" onclick="toggleSpoiler()">
                 Читати рушники
                 <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,36 +136,36 @@
                     <rect x="5.33398" y="5.3335" width="5.33333" height="5.33333" fill="#111111"/>
                     <rect y="10.6665" width="5.33333" height="5.33333" fill="#111111"/>
                 </svg>
-                <ul class="towels-list">
-                    <li><a href="#3" onclick="toggleMenu()">Місто життя й місце сили</a></li>
-                    <li><a href="#4" onclick="toggleMenu()">Пошук</a></li>
-                    <li><a href="#5" onclick="toggleMenu()">Життя триває</a></li>
-                    <li><a href="#6" onclick="toggleMenu()">Шлях до безпеки</a></li>
-                    <li><a href="#7" onclick="toggleMenu()">Забути минуле в майбутньому</a></li>
+                <ul class="towels-list" onclick="toggleSpoiler()">
+                    <li><a onclick="toggleMenu(),scrMoveTo('#towel1'),toggleSpoiler()">Місто життя й місце сили</a></li>
+                    <li><a onclick="toggleMenu(),scrMoveTo('#towel2'),toggleSpoiler()">Пошук</a></li>
+                    <li><a onclick="toggleMenu(),scrMoveTo('#towel3'),toggleSpoiler()">Життя триває</a></li>
+                    <li><a onclick="toggleMenu(),scrMoveTo('#towel4'),toggleSpoiler()">Шлях до безпеки</a></li>
+                    <li><a onclick="toggleMenu(),scrMoveTo('#towel5'),toggleSpoiler()">Забути минуле в майбутньому</a></li>
                 </ul>
             </li>
-            <li><a href="#8" onclick="toggleMenu()">Підтримка проєкту</a></li>
-            <li><a href="#9" onclick="toggleMenu()">Далі Є: отримати допомогу”</a></li>
-            <li><a href="#10" onclick="toggleMenu()">Новини</a></li>
-            <li><a href="#11" onclick="toggleMenu()">Створення рушників</a></li>
-            <li><a href="#12" onclick="toggleMenu()">Партнери</a></li>
+            <li><a  onclick="toggleMenu(),scrMoveTo('#support')">Підтримка проєкту</a></li>
+            <li><a  onclick="toggleMenu(),scrMoveTo('#platform')">Далі Є: отримати допомогу”</a></li>
+            <li><a  onclick="toggleMenu(),scrMoveTo('#exhibition')">Новини</a></li>
+            <li><a  onclick="toggleMenu(),scrMoveTo('#towels-creation')">Створення рушників</a></li>
+            <li><a  onclick="toggleMenu(),scrMoveTo('#partners')">Партнери</a></li>
         </ul>       
     </nav>
 
     
     <div class="navigation ">
-        <a href="#" onclick="scrMoveTo('#home')" target-section="#home" class="active"></a>
-        <a  href="#" onclick="scrMoveTo('#about')" target-section="#about"></a>
-        <a  href="#" onclick="scrMoveTo('#towel1')" target-section="#towel1"></a>
-        <a  href="#" onclick="scrMoveTo('#towel2')" target-section="#towel2"></a>
-        <a  href="#" onclick="scrMoveTo('#towel3')" target-section="#towel3"></a>
-        <a href="#" onclick="scrMoveTo('#towel4')" target-section="#towel4"></a>
-        <a  href="#" onclick="scrMoveTo('#towel5')" target-section="#towel5"></a>
-        <a  href="#" onclick="scrMoveTo('#support')" target-section="#support"></a>
-        <a  href="#" onclick="scrMoveTo('#platform')" target-section="#platform"></a>
-        <a  href="#" onclick="scrMoveTo('#exhibition')" target-section="#exhibition"></a>
-        <a  href="#" onclick="scrMoveTo('#towels-creation')" target-section="#towels-creation"></a>
-        <a  href="#" onclick="scrMoveTo('#partners')" target-section="#partners"></a>
+        <a  onclick="scrMoveTo('#home')" target-section="#home" class="active"></a>
+        <a  onclick="scrMoveTo('#about')" target-section="#about"></a>
+        <a  onclick="scrMoveTo('#towel1')" target-section="#towel1"></a>
+        <a  onclick="scrMoveTo('#towel2')" target-section="#towel2"></a>
+        <a  onclick="scrMoveTo('#towel3')" target-section="#towel3"></a>
+        <a  onclick="scrMoveTo('#towel4')" target-section="#towel4"></a>
+        <a  onclick="scrMoveTo('#towel5')" target-section="#towel5"></a>
+        <a  onclick="scrMoveTo('#support')" target-section="#support"></a>
+        <a  onclick="scrMoveTo('#platform')" target-section="#platform"></a>
+        <a  onclick="scrMoveTo('#exhibition')" target-section="#exhibition"></a>
+        <a  onclick="scrMoveTo('#towels-creation')" target-section="#towels-creation"></a>
+        <a  onclick="scrMoveTo('#partners')" target-section="#partners"></a>
     </div>
 
 
@@ -184,8 +184,9 @@
             <video class="bg-video" autoplay muted loop 
             src="https://user-images.githubusercontent.com/123087981/213567451-c0ba4430-5239-4f9b-ba28-6184085b5a6a.mp4"></video>
             <div class="hero-wrp">
-                <h1>вишиті болем</h1>
-                <h2>Історії, про які мовчать, вишиті на рушниках</h2>
+                <!-- <h1>вишиті болем</h1> -->
+                <img src="static/hero-title.svg" alt="" srcset="">
+                <h1>Історії, про які мовчать, вишиті на рушниках</h1>
             </div>
             <div class="hero-video-btn" onclick="toggleVideo()">
                 <div class="hero-video-btn-circle"><svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">

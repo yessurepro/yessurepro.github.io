@@ -208,7 +208,9 @@ header {
 }
 
 /* menu */
-
+nav a {
+  cursor: pointer;
+}
 nav {
   display: flex;
   justify-content: start;
@@ -275,6 +277,7 @@ nav ul.nav-list {
   width: 6px;
   background: #2F2E2D;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
 .navigation a.active {
@@ -366,7 +369,7 @@ section {
   top: 0;
   left: 0;
 }
-.home-intro h1 {
+/* .home-intro h1 {
   font-family: Almaz-Regular;
   letter-spacing: 0.92em;
   font-size: 9vw;
@@ -375,9 +378,9 @@ section {
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 2px;
   text-align: center;
-}
+} */
 
-.home-intro h2 {
+.home-intro h1 {
   font-size: 22px;
   line-height: 24px;
   text-align: center;
@@ -867,16 +870,56 @@ section {
 }
 
 @media (max-width:767px) {
-  .home-intro,
-.about,
-.see-towel,
-.support,
-.platform,
-.exhibition,
-.towels-creation,
-.partners-section {
-  height: 100%;
-}
+  header {
+    padding: 20px 20px 0;
+    align-items: center;
+  }
+  .logo-wrp{
+    width: 40px;
+  }
+  .brg svg {
+    width: 20px;
+    height: 20px;
+  }
+  .navigation {
+    display: none;
+  }
+  .social {
+    right: 20px;
+    bottom: 20px;
+    font-size: 10px;
+    line-height: 130%;
+  }
+  nav {
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  #more svg {
+    width: 8px;
+    height: 12px;
+  }
+  #more {
+    position: static;
+  }
+  .towels-list {
+    margin-left: 0;
+    height: 100vh;
+    background: #F5F5F5;
+    justify-content: center;
+  }
+  .towels-list-active {
+    right: 20px;
+    top: 0;
+    z-index: 44;
+  }
+  section {
+    padding: 0 20px;
+  }
+  .home-intro h1{
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 
