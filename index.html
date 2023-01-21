@@ -136,7 +136,7 @@
                     <rect x="5.33398" y="5.3335" width="5.33333" height="5.33333" fill="#111111"/>
                     <rect y="10.6665" width="5.33333" height="5.33333" fill="#111111"/>
                 </svg>
-                <ul class="towels-list" onclick="toggleSpoiler()">
+                <ul class="towels-list" onclick="offSpoiler()">
                     <li><a onclick="toggleMenu(),scrMoveTo('#towel1'),toggleSpoiler()">Місто життя й місце сили</a></li>
                     <li><a onclick="toggleMenu(),scrMoveTo('#towel2'),toggleSpoiler()">Пошук</a></li>
                     <li><a onclick="toggleMenu(),scrMoveTo('#towel3'),toggleSpoiler()">Життя триває</a></li>
@@ -841,8 +841,8 @@
                 // offset: 0,
                 scrollbars: true,
                 // standardScrollElements: "",
-                setHeights: true,
-                overflowScroll: true,
+                setHeights: false,
+                // overflowScroll: true,
                 // updateHash: true,
                 touchScroll: true,
                 // before: function () { },
@@ -889,8 +889,10 @@
         function toggleSpoiler () {
             const seeTowelsList = document.querySelector('.towels-list');
             seeTowelsList.classList.toggle('towels-list-active');
+            console.log('he')
         }
     </script>
+
 
     <!-- intersection animation -->
     <script src="observ.js"></script>

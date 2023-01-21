@@ -909,17 +909,29 @@ section {
     justify-content: center;
   }
   .towels-list-active {
-    right: 20px;
+    left: 20px;
     top: 0;
     z-index: 44;
   }
   section {
     padding: 0 20px;
+    overflow:visible;
   }
   .home-intro h1{
     font-size: 12px;
     line-height: 14px;
   }
+  .about {
+    height: 100%;
+  }
 }
 
-
+body {
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
+}
