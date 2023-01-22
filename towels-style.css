@@ -476,7 +476,8 @@
         flex-direction: column;
     }
     .towel-ornament-open {
-        height: 50vh;
+        height: 50dvh;
+        transition: height 0.25s;
     }
     .towel-ornament-open .img {
         width: 100%;
@@ -500,6 +501,30 @@
     .towel-story p {
         font-size: 14px;
         line-height: 140%;
+    }
+    .btn-txt {
+        font-size: 14px;
+    }
+    .story-nav .prev-towel {
+        flex-direction: column;
+        text-align: center;
+    }
+    .story-nav .next-towel {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+
+    .see-ornament-main-wrp {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .after-orn {
+        padding: 0 20px;
+    }
+    .after-orn .to-read-ornament svg {
+        width: 100%;
     }
 
 }

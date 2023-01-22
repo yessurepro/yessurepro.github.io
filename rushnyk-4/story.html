@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header style="backdrop-filter: blur(5px);">
         <div class="logo-wrp">
             <a href="https://vyshyti-bolem.in.ua/" onclick="scrMoveTo('#home')"><svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="1.4901161193847656e-8 0.27294909954071045 114.000244140625 67.36419677734375" fill="none"
@@ -181,8 +181,8 @@
 
     <nav id="nav">
         <ul class="nav-list">
-            <li><a href="https://vyshyti-bolem.in.ua/#1" onclick="toggleMenu()">Головна</a></li>
-            <li><a href="https://vyshyti-bolem.in.ua/#2" onclick="toggleMenu()">проєкт</a></li>
+            <li><a href="https://vyshyti-bolem.in.ua/#home">Головна</a></li>
+            <li><a href="https://vyshyti-bolem.in.ua/#about">проєкт</a></li>
             <li id="more" onclick="toggleSpoiler()">
                 Читати рушники
                 <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,18 +191,18 @@
                     <rect y="10.6665" width="5.33333" height="5.33333" fill="#111111" />
                 </svg>
                 <ul class="towels-list">
-                    <li><a href="https://vyshyti-bolem.in.ua/#3" onclick="toggleMenu()">Місто життя й місце сили</a></li>
-                    <li><a href="https://vyshyti-bolem.in.ua/#4" onclick="toggleMenu()">Пошук</a></li>
-                    <li><a href="https://vyshyti-bolem.in.ua/#5" onclick="toggleMenu()">Життя триває</a></li>
-                    <li><a href="https://vyshyti-bolem.in.ua/#6" onclick="toggleMenu()">Шлях до безпеки</a></li>
-                    <li><a href="https://vyshyti-bolem.in.ua/#7" onclick="toggleMenu()">Забути минуле в майбутньому</a></li>
+                    <li><a href="https://vyshyti-bolem.in.ua/#towel1">Місто життя й місце сили</a></li>
+                    <li><a href="https://vyshyti-bolem.in.ua/#towel2">Пошук</a></li>
+                    <li><a href="https://vyshyti-bolem.in.ua/#towel3">Життя триває</a></li>
+                    <li><a href="https://vyshyti-bolem.in.ua/#towel4">Шлях до безпеки</a></li>
+                    <li><a href="https://vyshyti-bolem.in.ua/#towel5">Забути минуле в майбутньому</a></li>
                 </ul>
             </li>
-            <li><a href="https://vyshyti-bolem.in.ua/#8" onclick="toggleMenu()">Підтримка проєкту</a></li>
-            <li><a href="https://vyshyti-bolem.in.ua/#9" onclick="toggleMenu()">Далі Є: отримати допомогу</a></li>
-            <li><a href="https://vyshyti-bolem.in.ua/#10" onclick="toggleMenu()">Новини</a></li>
-            <li><a href="https://vyshyti-bolem.in.ua/#11" onclick="toggleMenu()">Створення рушників</a></li>
-            <li><a href="https://vyshyti-bolem.in.ua/#12" onclick="toggleMenu()">Партнери</a></li>
+            <li><a href="https://vyshyti-bolem.in.ua/#support">Підтримка проєкту</a></li>
+            <li><a href="https://vyshyti-bolem.in.ua/#platform">Далі Є: отримати допомогу</a></li>
+            <li><a href="https://vyshyti-bolem.in.ua/#exhibition">Новини</a></li>
+            <li><a href="https://vyshyti-bolem.in.ua/#towels-creation">Створення рушників</a></li>
+            <li><a href="https://vyshyti-bolem.in.ua/#partners">Партнери</a></li>
         </ul>
     </nav>
 
@@ -676,6 +676,52 @@
              });
          });
      </script>
+
+
+
+
+<script>
+    if ($(window).width() < 767) {
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('header').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+    }
+</script>
 </body>
 
 </html>

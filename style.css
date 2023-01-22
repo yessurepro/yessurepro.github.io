@@ -154,9 +154,12 @@ strong {
   color: #D95E46;
   cursor: pointer;
 }
-.heart-like:hover svg rect {
+@media (min-width:768px) {
+  .heart-like:hover svg rect {
   fill: #D95E46;
 }
+}
+
 .heart-like.clicked svg rect {
   fill: #D95E46;
 }
@@ -918,9 +921,7 @@ section {
     left: 0;
     top: 0;
   }
-  .heart-like:hover svg rect {
-    fill: grey;
-}
+  
   section {
     padding: 0 20px;
   }
