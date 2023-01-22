@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header style="backdrop-filter: blur(5px);">
         <div class="logo-wrp">
             <a href="https://vyshyti-bolem.in.ua/" onclick="scrMoveTo('#home')"><svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="1.4901161193847656e-8 0.27294909954071045 114.000244140625 67.36419677734375" fill="none"
@@ -212,6 +212,7 @@
 
 
     <div class="see-towel-main-wrp">
+        <div class="towel-bg-layer"></div>
         <div class="towel-ornament-open">
             <div class="img" style="background-image: url(1-rush.webp);"></div>
         </div>
@@ -708,6 +709,48 @@
              });
          });
      </script>
+    <script>
+        if ($(window).width() < 767) {
+            // Hide Header on on scroll down
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 5;
+            var navbarHeight = $('header').outerHeight();
+
+            $(window).scroll(function (event) {
+                didScroll = true;
+            });
+
+            setInterval(function () {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+
+                // Make sure they scroll more than delta
+                if (Math.abs(lastScrollTop - st) <= delta)
+                    return;
+
+                // If they scrolled down and are past the navbar, add class .nav-up.
+                // This is necessary so you never see what is "behind" the navbar.
+                if (st > lastScrollTop && st > navbarHeight) {
+                    // Scroll Down
+                    $('header').addClass('nav-up');
+                } else {
+                    // Scroll Up
+                    if (st + $(window).height() < $(document).height()) {
+                        $('header').removeClass('nav-up');
+                    }
+                }
+
+                lastScrollTop = st;
+            }
+        }
+    </script>
 </body>
 
 </html>

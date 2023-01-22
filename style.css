@@ -135,6 +135,9 @@ html::-webkit-scrollbar {
 
 body {
   font-family: Almaz-Regular;
+  color: #2F2E2D;
+}
+h3 {
   color: #111111;
 }
 strong {
@@ -171,11 +174,13 @@ strong {
 
 header {
   position: fixed;
+  top: 0;
   padding: 40px 40px 0;
   width: 100%;
   z-index: 33;
   display: flex;
   justify-content: space-between;
+  transition: all 1s;
 }
 
 .nav-white {
@@ -188,6 +193,7 @@ header {
 
 .logo-wrp{
   width: 114px;
+  cursor: pointer;
 }
 .brg.open svg {
   transform: rotate(360deg);
@@ -303,7 +309,6 @@ nav ul.nav-list {
   position: fixed;
   bottom: 40px;
   right: 40px;
-  color: black;
   z-index: 22;
   display: flex;
   flex-direction: row;
@@ -525,6 +530,7 @@ section {
   font-size: 15px;
   line-height: 120%;
   text-transform: uppercase;
+  color: #111111;
 }
  .open-towel-btn-circle {
   width: 50px;
@@ -553,7 +559,6 @@ section {
   font-family: Almaz-Medium;
   font-size: 20px;
   line-height: 130%;
-  color: #555555;
 }
 .towel-image {
   height: 100vh;
@@ -903,16 +908,19 @@ section {
     position: static;
   }
   .towels-list {
-    margin-left: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 100vh;
     background: #F5F5F5;
     justify-content: center;
   }
   .towels-list-active {
-    left: 20px;
+    left: 0;
     top: 0;
-    z-index: 44;
   }
+  .heart-like:hover svg rect {
+    fill: grey;
+}
   section {
     padding: 0 20px;
   }
