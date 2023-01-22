@@ -252,10 +252,10 @@ nav ul.nav-list {
   gap: 24px;
   transition: all 1s;
   position: absolute;
-  right: -200vw ;
+  left: -200vw ;
 }
 .towels-list-active {
-  right: -670px;
+  left: 670px;
 }
 
   /*  dots navigation  */
@@ -917,7 +917,7 @@ section {
     padding: 0 20px;
   }
   .home-intro {
-    height: 100svh;
+    height: 100dvh;
   }
   .home-intro h1{
     font-size: 12px;

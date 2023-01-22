@@ -136,19 +136,20 @@
                     <rect x="5.33398" y="5.3335" width="5.33333" height="5.33333" fill="#111111"/>
                     <rect y="10.6665" width="5.33333" height="5.33333" fill="#111111"/>
                 </svg>
-                <ul class="towels-list" onclick="offSpoiler()">
-                    <li><a onclick="toggleMenu(),scrMoveTo('#towel1'),toggleSpoiler()">Місто життя й місце сили</a></li>
-                    <li><a onclick="toggleMenu(),scrMoveTo('#towel2'),toggleSpoiler()">Пошук</a></li>
-                    <li><a onclick="toggleMenu(),scrMoveTo('#towel3'),toggleSpoiler()">Життя триває</a></li>
-                    <li><a onclick="toggleMenu(),scrMoveTo('#towel4'),toggleSpoiler()">Шлях до безпеки</a></li>
-                    <li><a onclick="toggleMenu(),scrMoveTo('#towel5'),toggleSpoiler()">Забути минуле в майбутньому</a></li>
-                </ul>
+
             </li>
             <li><a  onclick="toggleMenu(),scrMoveTo('#support')">Підтримка проєкту</a></li>
             <li><a  onclick="toggleMenu(),scrMoveTo('#platform')">Далі Є: отримати допомогу”</a></li>
             <li><a  onclick="toggleMenu(),scrMoveTo('#exhibition')">Новини</a></li>
             <li><a  onclick="toggleMenu(),scrMoveTo('#towels-creation')">Створення рушників</a></li>
             <li><a  onclick="toggleMenu(),scrMoveTo('#partners')">Партнери</a></li>
+        </ul>
+        <ul class="towels-list" onclick="toggleSpoiler()">
+            <li><a onclick="toggleMenu(),scrMoveTo('#towel1')">Місто життя й місце сили</a></li>
+            <li><a onclick="toggleMenu(),scrMoveTo('#towel2')">Пошук</a></li>
+            <li><a onclick="toggleMenu(),scrMoveTo('#towel3')">Життя триває</a></li>
+            <li><a onclick="toggleMenu(),scrMoveTo('#towel4')">Шлях до безпеки</a></li>
+            <li><a onclick="toggleMenu(),scrMoveTo('#towel5')">Забути минуле в майбутньому</a></li>
         </ul>       
     </nav>
 
@@ -868,14 +869,13 @@
             var brg = document.getElementById("brg");
             var header = document.querySelector("header");
             const social = document.querySelector(".social");
+            let menuTowelsList = document.querySelector('.towels-list');
+            menuTowelsList.classList.remove('towels-list-active');
 
             nav.classList.toggle('open');
             brg.classList.toggle('open');
 
-            // if (document.querySelector('.navigation').classList.contains('white')) {
-            //     header.classList.toggle('nav-white');
-            //     social.classList.toggle('social-white');
-            // }
+
             let loc = window.location.href
             if ((loc.search("home")!==-1) || (loc.search("towels-creation")!==-1)){
                 header.classList.toggle('nav-white');
@@ -889,7 +889,6 @@
         function toggleSpoiler () {
             const seeTowelsList = document.querySelector('.towels-list');
             seeTowelsList.classList.toggle('towels-list-active');
-            console.log('he')
         }
     </script>
 
