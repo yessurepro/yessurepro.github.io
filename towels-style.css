@@ -522,6 +522,15 @@
     }
     .after-orn {
         padding: 0 20px;
+        height: 100%;
+        min-height: 100dvh;
+    }
+    .after-story-social {
+        margin: 40px 0;
+    }
+    .after-orn .story-nav {
+        margin: 0;
+        padding: 20px 0;
     }
     .after-orn .to-read-ornament svg {
         width: 100%;

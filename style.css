@@ -988,7 +988,7 @@ section {
     display: none;
   }
 
-  .r1, .r2, .r3, .r4 ,.r5 {
+  .wrapper .r1, .wrapper .r2, .wrapper .r3, .wrapper .r4 ,.wrapper .r5 {
     height: 100dvh;
     display: flex;
     flex-direction: column;
