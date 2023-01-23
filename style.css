@@ -360,7 +360,9 @@ section {
 .read-towel svg {
   margin-left: 12px;
 }
-
+.open-towel-mob-btn {
+  display: none;
+}
 
 
 /* hero */
@@ -932,9 +934,105 @@ section {
     font-size: 12px;
     line-height: 14px;
   }
+  
+  .parent-site {
+    display: none;
+  }
+  .hero-video-btn {
+    font-size: 10px;
+    line-height: 120%;
+    left: 20px;
+    bottom: 12px;
+  }
+  .hero-video-btn-circle {
+    width: 25px;
+    height: 25px;
+  }
+  .hero-video-btn-circle svg {
+    height: 10px;
+  }
+  .full-video {
+    width: 95%;
+    height: 40%;
+  }
   .about {
     height: 100%;
+    min-height: 100dvh;
   }
+  .orange-dots svg {
+    width: 32px;
+  }
+  .about-txt {
+    margin: 30px 0;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .partners {
+    gap: 40px;
+    overflow-x: auto;
+    align-items: center;
+  }
+  .partners img {
+    max-height: 65px;
+  }
+  .partners img:nth-child(4) {
+    max-width: 100px;
+  }
+  .read-towel {
+    display: none;
+  }
+
+  .r1, .r2, .r3, .r4 ,.r5 {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+
+  .towel-image {
+    position: static;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    z-index: 2;
+  }
+  .towel-info {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .towel-head h3 {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .towel-subhead {
+    font-size: 14px;
+    line-height: 140%;
+    color: #555555;
+  }
+  .open-towel-btn {
+    display: none;
+  }
+  .open-towel-mob-btn {
+    display: grid;
+    position: relative;
+    place-items: center;
+    margin-top: 10px;
+  }
+  .open-towel-mob-btn-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Almaz-Medium;
+  }
+  
 }
 
 

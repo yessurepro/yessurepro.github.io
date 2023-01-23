@@ -526,5 +526,13 @@
     .after-orn .to-read-ornament svg {
         width: 100%;
     }
+    .symbol-txt-wrp {
+        width: 75%;
+    }
+    .symbol-txt {
+        font-size: 14px;
+        line-height: 140%;
+        padding: 20px;
+    }
 
 }
