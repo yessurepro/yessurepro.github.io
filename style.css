@@ -1011,7 +1011,7 @@ section {
     width: 100%;
     /* background-size: contain; */
     background-position-y: bottom;
-    background-size: 110%;
+    background-size: 115%;
   }
   .towel-info {
     position: static;
@@ -1047,6 +1047,9 @@ section {
     text-transform: uppercase;
     color: #FFFFFF;
     font-family: Almaz-Medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   h3 {
     font-size: 22px;
