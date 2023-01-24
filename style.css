@@ -974,6 +974,8 @@ section {
     gap: 40px;
     overflow-x: auto;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .partners::-webkit-scrollbar {
     display: none;
@@ -1007,7 +1009,8 @@ section {
   }
   .r3 .towel-image,.r4 .towel-image {
     width: 100%;
-    background-size: contain;
+    /* background-size: contain; */
+    background-position-y: bottom;
   }
   .towel-info {
     position: static;
