@@ -1011,6 +1011,7 @@ section {
     width: 100%;
     /* background-size: contain; */
     background-position-y: bottom;
+    background-size: 110%;
   }
   .towel-info {
     position: static;
