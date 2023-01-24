@@ -1000,7 +1000,8 @@ section {
     position: static;
     height: 100%;
     width: 100%;
-    background-size: contain;
+    /* background-size: contain; */
+    background-position-y: bottom;
     z-index: 2;
     margin-bottom: 20px;
   }

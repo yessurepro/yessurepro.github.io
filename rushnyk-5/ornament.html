@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../towels-style.css">
     <title>Забути минуле в майбутньому | Читати орнамент</title>
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="Історія жінки, якій немає куди повертатися">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://vyshyti-bolem.in.ua/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Забути минуле в майбутньому | Читати орнамент">
+    <meta property="og:description" content="Історія жінки, якій немає куди повертатися">
+    <meta property="og:image" content="https://vyshyti-bolem.in.ua/static/social/5-rush-fb.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="vyshyti-bolem.in.ua">
+    <meta property="twitter:url" content="https://vyshyti-bolem.in.ua/">
+    <meta name="twitter:title" content="Забути минуле в майбутньому | Читати орнамент">
+    <meta name="twitter:description" content="Історія жінки, якій немає куди повертатися">
+    <meta name="twitter:image" content="https://vyshyti-bolem.in.ua/static/social/5-rush-fb.png">
+
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 
 <body id="see-ornament-body" class="orn5">
@@ -203,6 +222,7 @@
             <li><a href="https://vyshyti-bolem.in.ua/#exhibition">Новини</a></li>
             <li><a href="https://vyshyti-bolem.in.ua/#towels-creation">Створення рушників</a></li>
             <li><a href="https://vyshyti-bolem.in.ua/#partners">Партнери</a></li>
+            <li><a href="https://www.mh4u.in.ua/dali-ye/" class="na-site-dali-e">На сайт Далі Є</a></li>       
         </ul>
     </nav>
 
@@ -471,9 +491,9 @@
                 </button>
             </div>
             <div class="after-story-social">
-                <a href=""><img src="../static/fb.svg" alt=""></a>
-                <a href=""><img src="../static/in.svg" alt=""></a>
-                <a href=""><img src="../static/tw.svg" alt=""></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=vyshyti-bolem.in.ua/rushnyk-5/ornament"><img src="../static/fb.svg" alt=""></a>
+                <a href="https://instagram.com/mh4ukraine"><img src="../static/in.svg" alt=""></a>
+                <a href="https://twitter.com/intent/tweet?url=vyshyti-bolem.in.ua/rushnyk-5/ornament&text="><img src="../static/tw.svg" alt=""></a>
             </div>
             <a class="to-read-ornament" href="story.html">
                 <svg height="76" viewBox="0 0 670 76" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -708,6 +728,8 @@
         var brg = document.getElementById("brg");
         var header = document.querySelector("header");
         const social = document.querySelector(".social");
+        let menuTowelsList = document.querySelector('.towels-list');
+            menuTowelsList.classList.remove('towels-list-active');
 
         nav.classList.toggle('open');
         brg.classList.toggle('open');
