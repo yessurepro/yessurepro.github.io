@@ -136,6 +136,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
 }
 .towel-story .to-read-ornament svg path{
     transition: 0.5s;
@@ -450,6 +452,9 @@
 .after-orn .to-read-ornament {
     color: white;
     position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .after-orn .to-read-ornament:hover svg path {
     fill: #D95E46;
