@@ -149,6 +149,7 @@
 .towel-story .btn-txt {
     color: white;
     line-height: 100%;
+    transform: translate(-50%, -35%);
 }
 .story-nav {
     display: flex;
@@ -449,6 +450,9 @@
 .after-orn .after-story-social {
     width: 100%;
 }
+.after-orn .to-read-ornament .btn-txt {
+    transform: translate(-50%, -35%);
+}
 .after-orn .to-read-ornament {
     color: white;
     position: relative;
@@ -524,7 +528,7 @@
         line-height: 140%;
     }
     .btn-txt {
-        font-size: 14px;
+        font-size: 12px;
     }
     .story-nav .prev-towel {
         flex-direction: column;
