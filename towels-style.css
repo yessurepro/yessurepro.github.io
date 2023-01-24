@@ -210,7 +210,7 @@
 }
 .orn1 .t4 {
     top: 54.5%;
-    left: 34.7%;
+    left: 28.7%;
     transform: translate(-50%, -50%);
 }
 .orn1 .t5 {
@@ -284,13 +284,13 @@
 }
 /* ornament 4 */
 .orn4 .t1 {
-    top: 29%;
-    left: 50%;
+    top: 27%;
+    left: 41%;
     transform: translate(-50%, -50%);
 }
 .orn4 .t2 {
-    top: 50%;
-    left: 50%;
+    top: 52%;
+    left: 38%;
     transform: translate(-50%, -50%);
 }
 .orn4 .t3 {
@@ -304,8 +304,8 @@
     transform: translate(-50%, -50%);
 }
 .orn4 .t5 {
-    top: 85%;
-    left: 50%;
+    top: 86%;
+    left: 35%;
     transform: translate(-50%, -50%);
 }
 .orn4 .t6 {
@@ -315,8 +315,8 @@
 }
 /* ornament 5 */
 .orn5 .t1 {
-    top: 29%;
-    left: 50%;
+    top: 26%;
+    left: 45%;
     transform: translate(-50%, -50%);
 }
 .orn5 .t2 {
@@ -341,7 +341,7 @@
 }
 .orn5 .t6 {
     top: 69%;
-    left: 48%;
+    left: 59%;
     transform: translate(-50%, -50%);
 }
 .orn5 .t7 {

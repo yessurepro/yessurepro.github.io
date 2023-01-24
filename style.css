@@ -470,8 +470,8 @@ section {
   background-image: url(static/bg-main.jpg);
   background-blend-mode: luminosity, normal;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-size: cover;
+  background-attachment: fixed; */
 }
 .about-wrp {
   max-width: 896px;
