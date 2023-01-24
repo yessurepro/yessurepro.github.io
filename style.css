@@ -505,8 +505,8 @@ section {
   background-blend-mode: luminosity, normal;
   mix-blend-mode: multiply;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-size: cover;
+  background-attachment: fixed; */
   top: 0;
   left: 0;
 }
@@ -597,8 +597,8 @@ section {
   background-image: url(static/bg-main.jpg);
   background-blend-mode: luminosity, normal;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-size: cover;
+  background-attachment: fixed; */
 }
 .support-wrp {
   max-width: 874px;
@@ -653,8 +653,8 @@ section {
   background-image: url(static/bg-main.jpg);
   background-blend-mode: luminosity, normal;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-size: cover;
+  background-attachment: fixed; */
 }
 .platform-content {
   margin-top: 40px;
@@ -707,8 +707,8 @@ section {
   background-blend-mode: luminosity, normal;
   mix-blend-mode: multiply;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-size: cover;
+  background-attachment: fixed; */
 }
 .exhibition {
   background-color: #E9E8E7;
@@ -842,8 +842,8 @@ section {
   background-image: url(static/bg-main.jpg);
   background-blend-mode: luminosity, normal;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-size: cover;
+  background-attachment: fixed; */
 }
 .partners-wrp {
   max-width: 896px;

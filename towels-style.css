@@ -59,6 +59,19 @@
     position: relative;
     display: flex;
 }
+.see-towel-main-wrp .towel-bg-layer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(static/bg-main.jpg) #E9E7E4;
+    background-blend-mode: luminosity, normal;
+    mix-blend-mode: multiply;
+    /* background-repeat: no-repeat; */
+    /* background-size: auto; */
+    /* background-attachment: fixed; */
+    top: 0;
+    left: 0;
+}
 .towel-ornament-open,.towel-story {
     width: 50%;
 }
@@ -413,9 +426,9 @@
     background: #E9E7E4;
     background-image: url(static/bg-main.jpg);
     background-blend-mode: luminosity, normal;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     width: 100%;
 }
 
