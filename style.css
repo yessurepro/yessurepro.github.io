@@ -1048,8 +1048,10 @@ section {
     color: #FFFFFF;
     font-family: Almaz-Medium;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
   h3 {
     font-size: 22px;
