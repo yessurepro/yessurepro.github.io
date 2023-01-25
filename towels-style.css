@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding-top: 50px;
 }
 .towel-btns a {
     position: relative;
@@ -49,7 +50,16 @@
     justify-content: center;
     align-items: center;
 }
-
+.temp-wrp {
+    /* bottom: -70px; */
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 50px;
+    /* position: absolute; */
+}
+.temp-wrp svg {
+    margin-right: 12px;
+}
 
 
 
@@ -491,8 +501,11 @@
     }
     .towel-btns {
         position: absolute;
+        padding-top: 0;
     }
-    
+    .temp-wrp {
+        display: none;
+    }
     .nav-up {
         top: -62.45px;
         transition: all 1s;
