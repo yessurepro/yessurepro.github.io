@@ -1178,6 +1178,9 @@ section {
   .slide-num.slide-num-active::after {
     width: 40px;
   }
+  .swiper-horizontal>.swiper-pagination-bullets {
+    left: 20px;
+  }
 
 
 

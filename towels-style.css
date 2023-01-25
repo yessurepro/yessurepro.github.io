@@ -498,6 +498,7 @@
     .towel-ornament img {
         width: 100%;
         object-fit: cover;
+        mix-blend-mode: darken;
     }
     .towel-btns {
         position: absolute;
