@@ -757,7 +757,6 @@ section {
 /* towel creation */
 
 .towels-creation {
-  background-color: red;
   padding: 0;
   position: relative;
 }
@@ -772,25 +771,28 @@ section {
   background-position: center;
 }
 .swiper-slide:nth-child(1) {
-  background-image: url(static/01.jpg);
+  background-image: url(static/01.webp);
 }
 .swiper-slide:nth-child(2) {
-  background-image: url(static/02.jpg);
+  background-image: url(static/02.webp);
 }
 .swiper-slide:nth-child(3) {
-  background-image: url(static/03.jpg);
+  background-image: url(static/03.webp);
 }
 .swiper-slide:nth-child(4) {
-  background-image: url(static/04.jpg);
+  background-image: url(static/04.webp);
 }
 .swiper-slide:nth-child(5) {
-  background-image: url(static/05.jpg);
+  background-image: url(static/05.webp);
 }
 .swiper-slide:nth-child(6) {
-  background-image: url(static/06.jpg);
+  background-image: url(static/06.webp);
 }
 .swiper-slide:nth-child(7) {
-  background-image: url(static/07.jpg);
+  background-image: url(static/07.webp);
+}
+.swiper-slide:nth-child(8) {
+  background-image: url(static/08.webp);
 }
 .swiper-prev {
   position: absolute;
