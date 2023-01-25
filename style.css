@@ -584,6 +584,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  margin-left: 100px;
 }
 .r4 .towel-image {
   height: 100vh;
@@ -1017,6 +1018,9 @@ section {
     background-position-y: bottom;
     z-index: 2;
     margin-bottom: 20px;
+  }
+  .r3 .towel-image {
+    margin-left: 0;
   }
   .r3 .towel-image,.r4 .towel-image {
     width: 100%;
