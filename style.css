@@ -704,6 +704,8 @@ section {
 
 .ex-bg-layer {
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background: url(static/bg-main.jpg) #E9E7E4;
@@ -715,14 +717,16 @@ section {
 }
 .exhibition {
   background-color: #E9E8E7;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .exhibition-wrp {
   display: flex;
   gap:150px;
   max-width: 1130px;
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  /* margin-bottom: 100px; */
 }
 .ex-left {
   display: flex;
