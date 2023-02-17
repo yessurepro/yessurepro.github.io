@@ -572,26 +572,34 @@ section {
 }
 .towel-image {
   height: 100vh;
-  width: 44%;
+  width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
   position: relative;
 }
+.r1 .towel-image {
+  background-position-y: 98%;
+  background-position-x: 64%;
+  background-size: 49%;
+}
+.r2 .towel-image {
+  background-position-y: 83%;
+  background-position-x: 64%;
+  background-size: 44%;
+}
 .r3 .towel-image {
-  height: 100vh;
-  width: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  margin-left: 200px;
+  background-position-y: 89%;
+  background-position-x: 64%;
+  background-size: 48%;
 }
 .r4 .towel-image {
-  height: 100vh;
-  width: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  background-position-y: 87%;
+  background-position-x: 60%;
+  background-size: 46%;
+}
+.r5 .towel-image {
+  background-position-y: 95%;
+  background-position-x: 75%;
+  background-size: 58%;
 }
 
 
@@ -1014,20 +1022,33 @@ section {
     position: static;
     height: 100%;
     width: 100%;
-    /* background-size: contain; */
-    background-position-y: bottom;
     z-index: 2;
     margin-bottom: 20px;
   }
-  .r3 .towel-image {
-    margin-left: 0;
-  }
-  .r3 .towel-image,.r4 .towel-image {
-    width: 100%;
-    /* background-size: contain; */
+ 
+
+  .r1 .towel-image {
+    background-size: 100%;
     background-position-y: bottom;
-    background-size: 115%;
   }
+  .r2 .towel-image {
+    background-size: 100%;
+    background-position-y: bottom;
+  }
+  .r3 .towel-image {
+    background-size: 100%;
+    background-position-y: bottom;
+  }
+  .r4 .towel-image {
+    background-size: 100%;
+    background-position-y: bottom;
+  }
+  .r5 .towel-image {
+    background-size: 100%;
+    background-position-y: bottom;
+  }
+
+
   .towel-info {
     position: static;
     text-align: center;
