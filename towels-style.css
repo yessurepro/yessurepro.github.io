@@ -438,7 +438,7 @@
     margin-bottom: 10px;
     display: block;
 }
-.after-orn-wrp {
+.after-orn-wrp, .ornament-wrp {
     background: #E9E7E4;
     background-image: url(static/bg-main.jpg);
     background-blend-mode: luminosity, normal;
