@@ -51,11 +51,10 @@
     align-items: center;
 }
 .temp-wrp {
-    /* bottom: -70px; */
+    display: none;
     font-size: 16px;
     line-height: 140%;
     margin-top: 50px;
-    /* position: absolute; */
 }
 .temp-wrp svg {
     margin-right: 12px;
@@ -210,40 +209,40 @@
 
 /* ornament 1 */
 .orn1 .t1 {
-    top: 19%;
-    left: 50.7%;
+    top: 23%;
+    left: 49.7%;
     transform: translate(-50%, -50%);
 }
 .orn1 .t2 {
-    top: 30.5%;
-    left: 50.7%;
+    top: 34.5%;
+    left: 49.7%;
     transform: translate(-50%, -50%);
 }
 .orn1 .t3 {
-    top: 48%;
+    top: 49.5%;
     left: 50.4%;
     transform: translate(-50%, -50%);
 }
 .orn1 .t4 {
-    top: 54.5%;
-    left: 28.7%;
+    top: 57.5%;
+    left: 25.7%;
     transform: translate(-50%, -50%);
 }
 .orn1 .t5 {
-    top: 67.5%;
-    left: 34.7%;
+    top: 68.5%;
+    left: 75.7%;
     transform: translate(-50%, -50%);
 }
 .orn1 .t6 {
-    top: 74.5%;
-    left: 50.7%;
+    top: 78.5%;
+    left: 51.7%;
     transform: translate(-50%, -50%);
 }
 /* ornament 2 */
 
 .orn2 .t1 {
-    top: 29%;
-    left: 46.5%;
+    top: 27%;
+    left: 51.5%;
     transform: translate(-50%, -50%);
 }
 .orn2 .t2 {
@@ -264,20 +263,21 @@
 
 /* ornament 3 */
 .orn3 .t1 {
-    top: 27%;
-    left: 50%;
+    top: 18%;
+    left: 47%;
     transform: translate(-50%, -50%);
 }
 .orn3 .t2 {
-    top: 50%;
-    left: 50%;
+    top: 48%;
+    left: 49%;
     transform: translate(-50%, -50%);
 }
 .orn3 .t3 {
-    top: 45%;
+    top: 43%;
     left: 36.5%;
     transform: translate(-50%, -50%);
 }
+
 .orn3 .t4 {
     top: 57%;
     left: 49.5%;
@@ -300,28 +300,28 @@
 }
 /* ornament 4 */
 .orn4 .t1 {
-    top: 27%;
-    left: 41%;
+    top: 34.2%;
+    left: 49.5%;
     transform: translate(-50%, -50%);
 }
 .orn4 .t2 {
-    top: 52%;
-    left: 38%;
+    top: 54%;
+    left: 33%;
     transform: translate(-50%, -50%);
 }
 .orn4 .t3 {
-    top: 64%;
-    left: 24%;
+    top: 69%;
+    left: 29%;
     transform: translate(-50%, -50%);
 }
 .orn4 .t4 {
     top: 71%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
 }
 .orn4 .t5 {
-    top: 86%;
-    left: 35%;
+    top: 87%;
+    left: 39%;
     transform: translate(-50%, -50%);
 }
 .orn4 .t6 {
@@ -331,8 +331,8 @@
 }
 /* ornament 5 */
 .orn5 .t1 {
-    top: 26%;
-    left: 45%;
+    top: 24%;
+    left: 46%;
     transform: translate(-50%, -50%);
 }
 .orn5 .t2 {
@@ -346,32 +346,32 @@
     transform: translate(-50%, -50%);
 }
 .orn5 .t4 {
-    top: 61%;
+    top: 63%;
     left: 38%;
     transform: translate(-50%, -50%);
 }
 .orn5 .t5 {
-    top: 60%;
-    left: 76%;
+    top: 62%;
+    left: 81%;
     transform: translate(-50%, -50%);
 }
 .orn5 .t6 {
-    top: 69%;
-    left: 59%;
+    top: 72%;
+    left: 62%;
     transform: translate(-50%, -50%);
 }
 .orn5 .t7 {
-    top: 74%;
+    top: 77%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .orn5 .t8 {
-    top: 83%;
+    top: 84%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .orn5 .t9 {
-    top: 90%;
+    top: 92%;
     left: 38%;
     transform: translate(-50%, -50%);
 }
@@ -382,6 +382,29 @@
     border-radius: 50%;
     animation: animate-pulse 3s linear infinite;
     cursor: pointer;
+    position: relative;
+}
+.pulse::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 3px white;
+    border-radius: 50%;
+}
+.pulse::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 3px white;
+    border-radius: 50%;
 }
 @keyframes animate-pulse{
     0%{
