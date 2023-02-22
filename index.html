@@ -1052,10 +1052,32 @@ function navHighlighter() {
 
 <script>
     function sizing (){
+        let wininnerh = window.innerHeight + 'px';
         let hi = document.querySelector('.home-intro');
         let hiv = document.querySelector('.bg-video');
-        hi.style.height = window.innerHeight + 'px';
-        hiv.style.height = window.innerHeight + 'px';
+        let ab = document.querySelector('.about');
+        let r1 = document.querySelector('.r1');
+        let r2 = document.querySelector('.r2');
+        let r3 = document.querySelector('.r3');
+        let r4 = document.querySelector('.r4');
+        let r5 = document.querySelector('.r5');
+        let support = document.querySelector('.support');
+        let platform = document.querySelector('.platform');
+        let towelscr = document.querySelector('.towels-creation');
+        let partn = document.querySelector('.partners-section ');
+        
+        hi.style.height = wininnerh;
+        hiv.style.height = wininnerh;
+        ab.style.height = wininnerh;
+        r1.style.height = wininnerh;
+        r2.style.height = wininnerh;
+        r3.style.height = wininnerh;
+        r4.style.height = wininnerh;
+        r5.style.height = wininnerh;
+        support.style.height = wininnerh;
+        platform.style.height = wininnerh;
+        towelscr.style.height = wininnerh;
+        partn.style.height = wininnerh;
     };
     sizing ();
     $(window).on('resize', function (){ sizing ()});

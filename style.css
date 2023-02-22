@@ -371,7 +371,6 @@ section {
 
 .home-intro{
   position: relative;
-  display: none;
 }
 .home-intro .bg-video {
   position: absolute;
@@ -895,7 +894,6 @@ section {
 
 .home-intro,
 .about,
-.see-towel,
 .support,
 .platform,
 .exhibition,
