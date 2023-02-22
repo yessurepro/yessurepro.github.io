@@ -1011,14 +1011,13 @@ section {
   }
 
   .wrapper .r1, .wrapper .r2, .wrapper .r3, .wrapper .r4 ,.wrapper .r5 {
-    height: 100dvh;
+    /* height: 100dvh; */
     display: flex;
     flex-direction: column;
     padding-top: 0;
     padding-bottom: 20px;
-    /* height: 100vh;
-    max-height: 100dvh; */
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    max-height: 100dvh;
   }
 
   .towel-image {
