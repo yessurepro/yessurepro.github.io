@@ -1016,8 +1016,9 @@ section {
     flex-direction: column;
     padding-top: 0;
     padding-bottom: 20px;
-    height: 100vh;
-    max-height: 100dvh;
+    /* height: 100vh;
+    max-height: 100dvh; */
+    min-height: -webkit-fill-available;
   }
 
   .towel-image {
