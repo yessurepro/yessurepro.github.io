@@ -1060,9 +1060,9 @@ function navHighlighter() {
     sizing ();
     $(window).on('resize', function (){ sizing ()});
     function scrollWin() {
-        window.scrollTo(0, 0);
+        window.scrollTo(0, -10);
     }
-    scrollWin();
+    setTimeout( function (){scrollWin();}, 2000)
 </script>
 </body>
 </html>
