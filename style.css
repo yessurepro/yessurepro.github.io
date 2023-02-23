@@ -377,6 +377,7 @@ section {
   z-index: -1;
   top: 0;
   left: 0;
+  width: 100%;
 }
 .home-intro .bg-video video{
   width: 100%;
