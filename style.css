@@ -734,40 +734,91 @@ section {
 }
 .exhibition-wrp {
   display: flex;
-  gap:150px;
+  gap:40px;
   max-width: 1130px;
   position: relative;
   margin-top: 50px;
-  /* margin-bottom: 100px; */
+
 }
 .ex-left {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  width: 40%;
 }
 .ex-head {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 130%;
   text-transform: uppercase;
   font-family: Almaz-Light;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
-
-.ex-info {
+.ex-info .ex-cities {
   text-transform: uppercase;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  font-size: 26px;
+  line-height: 150%;
+  margin: 40px 0 24px;
+  font-family: Almaz-Regular;
+}
+.ex-info p{
+  text-transform: uppercase;
   font-size: 18px;
-  line-height: 220%;
+  line-height: 150%;
   font-family: Almaz-Medium;
 }
 .ex-info a {
   text-decoration: underline;
 }
-.ex-poster {
-  max-width: 440px;
+.exhibition .swiper2 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.exhibition .swiper-slide {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.exhibition .swiper-slide:nth-child(1) {
+  background-image: url(static/exhibition/1.jpg);
+}
+.exhibition .swiper-slide:nth-child(2) {
+  background-image: url(static/exhibition/2.jpg);
+}
+.exhibition .swiper-slide:nth-child(3) {
+  background-image: url(static/exhibition/3.jpg);
+}
+.exhibition .swiper-slide:nth-child(4) {
+  background-image: url(static/exhibition/4.jpg);
+}
+.exhibition .swiper-slide:nth-child(5) {
+  background-image: url(static/exhibition/5.jpg);
+}
+.exhibition .swiper-slide:nth-child(6) {
+  background-image: url(static/exhibition/6.jpg);
+}
+.swiper-prev2 {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+ .swiper-next2 {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+.ex-kyiv {
+  position: absolute;
+  bottom: -40px;
+  margin-left: 50%;
+  font-size: 15px;
+  line-height: 140%;
+  font-family: Almaz-Medium;
+  text-transform: uppercase;
 }
 
 /* towel creation */
@@ -776,48 +827,48 @@ section {
   padding: 0;
   position: relative;
 }
-.swiper {
+.towels-creation .swiper {
   height: 100%;
   width: 100%;
 }
-.swiper-slide {
+.towels-creation .swiper-slide {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.swiper-slide:nth-child(1) {
+.towels-creation .swiper-slide:nth-child(1) {
   background-image: url(static/01.webp);
 }
-.swiper-slide:nth-child(2) {
+.towels-creation .swiper-slide:nth-child(2) {
   background-image: url(static/02.webp);
 }
-.swiper-slide:nth-child(3) {
+.towels-creation .swiper-slide:nth-child(3) {
   background-image: url(static/03.webp);
 }
-.swiper-slide:nth-child(4) {
+.towels-creation .swiper-slide:nth-child(4) {
   background-image: url(static/04.webp);
 }
-.swiper-slide:nth-child(5) {
+.towels-creation .swiper-slide:nth-child(5) {
   background-image: url(static/05.webp);
 }
-.swiper-slide:nth-child(6) {
+.towels-creation .swiper-slide:nth-child(6) {
   background-image: url(static/06.webp);
 }
-.swiper-slide:nth-child(7) {
+.towels-creation .swiper-slide:nth-child(7) {
   background-image: url(static/07.webp);
 }
-.swiper-slide:nth-child(8) {
+.towels-creation .swiper-slide:nth-child(8) {
   background-image: url(static/08.webp);
 }
-.swiper-prev {
+.towels-creation .swiper-prev {
   position: absolute;
   top: 50%;
   left: 200px;
   z-index: 1;
   cursor: pointer;
 }
-.swiper-next {
+.towels-creation .swiper-next {
   position: absolute;
   top: 50%;
   right: 200px;
@@ -825,7 +876,7 @@ section {
   cursor: pointer;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets {
+.towels-creation .swiper-horizontal>.swiper-pagination-bullets {
   position: absolute;
   left: 40px;
   bottom: 40px;
@@ -1177,31 +1228,62 @@ section {
     gap: 30px;
     margin: 0;
   }
+  .ex-left {
+    width: 100%;
+  }
   .ex-head {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
   }
   .ex-info {
-    margin-top: 20px;
     font-size: 12px;
     line-height: 130%;
     gap: 12px;
   }
-
+  .ex-info .ex-cities {
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 20px;
+  }
+  .ex-info p {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .exhibition .swiper2 {
+    height: 60vw;
+  }
+  .swiper-prev2 {
+    transform: translateY(-50%);
+    left: 12px;
+  }
+   .swiper-next2 {
+    transform: translateY(-50%);
+    right: 12px;
+  }
+  .swiper-prev2 svg, .swiper-next2 svg {
+    width: 8px;
+  }
+  .ex-kyiv {
+    position: static;
+    margin-left: 0;
+    font-size: 10px;
+    line-height: 140%;
+    text-align: center;
+  }
 
   .towels-creation {
     height: 100dvh;
   }
-  .swiper-prev {
+  .towels-creation .swiper-prev {
     left: 20px;
   }
-  .swiper-next {
+  .towels-creation .swiper-next {
     right: 20px;
   }
   .swiper-prev svg, .swiper-next svg {
     width: 15px;
   }
-  .swiper-pagination {
+  .towels-creation .swiper-pagination {
     font-size: 12px;
     line-height: 130%;
     left: 20px;

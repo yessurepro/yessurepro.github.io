@@ -739,7 +739,7 @@
             <div class="ex-bg-layer"></div>
             <div class="exhibition-wrp">
                 <div class="ex-left">
-                    <div class="ex-head"><h3>Відчуйте силу рушників наживо в Києві</h3></div>
+                    <div class="ex-head"><h3>Відчуйте силу рушників наживо у своєму місті</h3></div>
                     <div class="free-enter">
                         <svg width="43" height="13" viewBox="0 0 43 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect y="6.36377" width="9" height="9" transform="rotate(-45 0 6.36377)" fill="#D95E46"/>
@@ -748,12 +748,53 @@
                         </svg>
                     </div>
                     <div class="ex-info">
-                        <span>Коли:  26 січня – 20 лютого 2023 року </span>
-                        <span>Де:  станція метро <a href="https://goo.gl/maps/1k4rhJa6qF7BdFd56">“Золоті Ворота”</a></span>
-                        <span>Графік роботи:  щодня з 6 до 22 години</span>
+                        <div class="ex-cities">Чернігів, Суми, Харків, Дніпро, Одеса</div>
+                        <p>1 – 15 березня 2023 року<br><br>
+                        Приміщення головного залізничного вокзалу</p>
                     </div>
                 </div>
-                <img class="ex-poster" src="static/afisha-2.webp" alt="" srcset="">
+            <!-- Slider main container -->
+                <div class="swiper2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+            
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-prev2">
+                        <svg width="20" height="36" viewBox="0 0 30 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="24" width="6" height="6" fill="white" />
+                            <rect x="24" width="6" height="6" fill="white" />
+                            <rect width="6" height="6" transform="matrix(-1 0 0 1 12 30)" fill="white" />
+                            <rect x="6" y="18" width="6" height="6" fill="white" />
+                            <rect width="6" height="6" transform="matrix(-1 0 0 1 30 48)" fill="white" />
+                            <rect x="12" y="11.9995" width="6" height="6" fill="white" />
+                            <rect width="6" height="6" transform="matrix(-1 0 0 1 24 41.9995)" fill="white" />
+                            <rect x="18" y="6" width="6" height="6" fill="white" />
+                            <rect width="6" height="6" transform="matrix(-1 0 0 1 18 36)" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="swiper-next2">
+                        <svg width="20" height="36" viewBox="0 0 30 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="6" height="6" transform="matrix(-1 0 0 1 30.001 24)" fill="white" />
+                            <rect width="6" height="6" transform="matrix(-1 0 0 1 6.00098 0)" fill="white" />
+                            <rect x="18.001" y="30" width="6" height="6" fill="white" />
+                            <rect width="6" height="6" transform="matrix(-1 0 0 1 24.001 18)" fill="white" />
+                            <rect x="0.000976562" y="48" width="6" height="6" fill="white" />
+                            <rect width="6" height="6" transform="matrix(-1 0 0 1 18.001 11.9995)" fill="white" />
+                            <rect x="6.00098" y="41.9995" width="6" height="6" fill="white" />
+                            <rect width="6" height="6" transform="matrix(-1 0 0 1 12.001 6)" fill="white" />
+                            <rect x="12.001" y="36" width="6" height="6" fill="white" />
+                        </svg>
+                    </div>            
+                </div>
+                <div class="ex-kyiv">Відкриття виставки у Києві, 26.01.2023</div>
             </div>
             <div onclick="scrMoveTo('#towel1')" class="read-towel">
                 Читати рушники
@@ -763,6 +804,20 @@
                     <rect y="10.6665" width="5.33333" height="5.33333" fill="#111111"/>
                 </svg>
             </div>
+            <script>
+                const swiper2 = new Swiper('.swiper2', {
+                    speed: 400,
+                    spaceBetween: 0,
+                    slidesPerView: 1,
+                    autoplay: {
+                        delay: 5000,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-next2',
+                        prevEl: '.swiper-prev2',
+                    },
+                });
+            </script>
         </section>
 
         <section id="11" data-section-name="towels-creation" class="section towels-creation">
@@ -1063,6 +1118,7 @@ function navHighlighter() {
         let r5 = document.querySelector('.r5');
         let support = document.querySelector('.support');
         let platform = document.querySelector('.platform');
+        let exh = document.querySelector('.exhibition');
         let towelscr = document.querySelector('.towels-creation');
         let partn = document.querySelector('.partners-section ');
         
@@ -1076,6 +1132,7 @@ function navHighlighter() {
         r5.style.height = wininnerh;
         support.style.height = wininnerh;
         platform.style.height = wininnerh;
+        exh.style.height = wininnerh;
         towelscr.style.height = wininnerh;
         partn.style.height = wininnerh;
     };
