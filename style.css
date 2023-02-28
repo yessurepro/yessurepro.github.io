@@ -184,6 +184,7 @@ header {
   display: flex;
   justify-content: space-between;
   transition: all 1s;
+  align-items: center;
 }
 
 .nav-white {
@@ -215,7 +216,14 @@ header {
 .brg svg {
   transition: all 1s;
 }
-
+.lang-toggle {
+  margin: 0 40px 0 auto;
+  font-size: 15px;
+  line-height: 130%;
+}
+.lang-toggle span {
+  margin: 0 8px;
+}
 /* menu */
 nav a {
   cursor: pointer;
@@ -264,7 +272,7 @@ nav ul.nav-list {
   left: -200vw ;
 }
 .towels-list-active {
-  left: 670px;
+  left: 640px;
 }
 .na-site-dali-e {
   display: none;
