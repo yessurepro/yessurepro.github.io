@@ -210,11 +210,11 @@
 
 
     <div class="social">
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://vyshyti-bolem.in.ua/">FB</a>
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://vyshyti-bolem.in.ua/en/">FB</a>
         <div class="divider">/</div>
         <a target="_blank" href="https://instagram.com/mh4ukraine" target="_blank">IN</a>
         <div class="divider">/</div>
-        <a target="_blank" href="https://twitter.com/intent/tweet?url=https://vyshyti-bolem.in.ua/&text=">TW</a>
+        <a target="_blank" href="https://twitter.com/intent/tweet?url=https://vyshyti-bolem.in.ua/en/&text=">TW</a>
     </div>
     
 
@@ -250,7 +250,7 @@
                 <!-- <video class="full-video" controls>
                     <source src="https://youtu.be/CSoCoSHyU5Y" type="video/mp4">
                 </video> -->
-                <iframe class="full-video" src="https://www.youtube.com/embed/kj1or7pXsCo" title="Вишиті болем" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="full-video" src="https://www.youtube.com/embed/dsH2ifJ32Sc?enablejsapi=1" title="Embroidered with pain" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="close" onclick="toggleVideo()">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.682129" width="4" height="4" fill="white"/>
@@ -1153,6 +1153,11 @@ function navHighlighter() {
     sizing ();
     $(window).on('resize', function (){ sizing ()});
 
+</script>
+<script>
+    $('.close').click(function(){
+	$('.full-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+});
 </script>
 </body>
 </html>
