@@ -945,7 +945,7 @@ section {
   justify-content: space-between;
 }
 .exex-partners img {
-  max-height: 75px;
+  max-height: 50px;
   filter: saturate(0);
 }
 
